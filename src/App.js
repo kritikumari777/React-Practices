@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-// import { Hello } from "./components/AFunComponent.js";
-// import Message from "./components/BClassComp.js";
-// import Profile from './components/CProp';
-// import Counter from "./components/DState.js";
-// import Resume from './components/EDestructorProp';
+import { Hello } from "./components/AFunComponent.js";
+import Message from "./components/BClassComp.js";
+import Profile from './components/CProp';
+import Counter from "./components/DState.js";
+import Resume from './components/EDestructorProp';
 // import FunctionEvent from './components/FunctionEvent';
 // import ClassEvent from './components/GClassEvent';
 // import FunctionCounter from './components/HookFunCounter';
@@ -23,7 +23,16 @@ import Modal from './components/WModal';
 function App() {
   return (
     <div className="App">
-      <Modal></Modal>
+      <Hello></Hello>
+     <Message messagecontent=" this is prope"></Message>
+     <Profile name="prop" means=" is Property" ></Profile>
+     <Profile name=" property" means=" is argument"></Profile>
+     <Profile name=" argument" means="that we pass to a function"></Profile>
+     <h6>This is a child of a Profile file</h6>
+     <Counter></Counter>
+     <Resume name="Destructure"></Resume>
+     <Modal></Modal>
+    
 
     </div>
   );
@@ -31,13 +40,3 @@ function App() {
 
 export default App;
 
-/*
-<Hello></Hello>
-<Message messagecontent=" this is prope"></Message>
-<Profile name="prop" means=" is Property" ></Profile>
-<Profile name=" property" means=" is argument"></Profile>
-<Profile name=" argument" means="that we pass to a function"></Profile>
-<h6>This is a child of a Profile file</h6>
-<Counter></Counter>
-<Resume name="Destructure"></Resume>
-*/
